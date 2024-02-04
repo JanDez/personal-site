@@ -16,6 +16,14 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -30,4 +38,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1, h2{
+    text-align: center;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
 }
